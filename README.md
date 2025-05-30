@@ -87,14 +87,6 @@ Add this to your Claude Desktop configuration or Cursor file:
 
 **Important**: Change the directory path to match your actual installation location.
 
-### 5. Restart Claude Desktop
-
-After adding the configuration, restart Claude Desktop completely.
-
-## How to Use
-
-Once configured, just talk to Claude naturally:
-
 ### Simple Examples
 
 **Send a basic email:**
@@ -117,11 +109,6 @@ Once configured, just talk to Claude naturally:
 **Send to multiple people with attachments:**
 ```
 "Send a custom email to the team about the project update. Send to team@company.com, CC manager@company.com, and attach the project report"
-```
-
-**Send with custom SMTP settings:**
-```
-"Send a custom email using different SMTP settings for this one message"
 ```
 
 ## Email Provider Setup
@@ -204,12 +191,6 @@ uv run python test_email.py
 uv run python test_email.py --send-real
 ```
 
-## Security Notes
-
-- Your email credentials are stored securely in Claude Desktop
-- Never share your configuration file with credentials
-- Use app passwords for Gmail and Yahoo
-- Enable 2-Factor Authentication on your email accounts
 
 ## License
 
