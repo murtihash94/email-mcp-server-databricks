@@ -1,6 +1,6 @@
 # Email MCP Server
 
-This MCP (Model Context Protocol) server lets your AI assistant send emails for you. It's like giving your AI a direct way to send messages to anyone's inbox.
+This MCP (Model Context Protocol) server lets your AI assistant send emails for you.
 
 ## What Can It Do?
 
