@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from main import (
+from email_server.server import (
     get_smtp_config_from_env,
     send_email_smtp,
     test_smtp_connection,

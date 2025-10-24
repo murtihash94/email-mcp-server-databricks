@@ -374,21 +374,4 @@ async def test_smtp_connection_tool() -> str:
         return f"Connection test failed: {error_message}"
 
 # === SERVER STARTUP ===
-
-if __name__ == "__main__":
-    import warnings
-    warnings.warn(
-        "Running main.py directly is deprecated. "
-        "Please use 'uv run email-server' instead for the new Databricks-compatible deployment. "
-        "This file is kept for backward compatibility.",
-        DeprecationWarning,
-        stacklevel=2
-    )
-    logger.info("Starting MCP Email Server...")
-    logger.info("Available tools:")
-    logger.info("  - send_email: Send simple emails using environment configuration")
-    logger.info("  - send_custom_email: Send emails with full configuration options")
-    logger.info("  - test_smtp_connection_tool: Test SMTP connection")
-    logger.info("")
-    logger.info("Note: For Databricks deployment, use 'uv run email-server' instead")
-    mcp.run(transport="stdio")
+# Entry point is handled by main.py and app.py
