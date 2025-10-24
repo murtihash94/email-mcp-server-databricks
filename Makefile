@@ -1,4 +1,4 @@
-.PHONY: help install build test clean dev deploy-bundle deploy-apps
+.PHONY: help install build test clean dev deploy-bundle deploy-apps lint format
 
 help: ## Show this help message
 	@echo 'Usage: make [target]'

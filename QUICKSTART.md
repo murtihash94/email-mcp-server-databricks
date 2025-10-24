@@ -176,4 +176,3 @@ uv run python test_email.py
 - **DEPLOYMENT.md**: Databricks deployment instructions
 - **MIGRATION.md**: Migration from old version
 - **GitHub Issues**: Bug reports and feature requests
-```
