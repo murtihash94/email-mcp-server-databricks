@@ -1,18 +1,33 @@
 [project]
-name = "documentation"
+name = "email-server"
 version = "0.1.0"
-description = "Add your description here"
+description = "Email MCP Server on Databricks Apps - Send emails through AI agents"
 readme = "README.md"
+authors = [
+    { name = "murtihash94", email = "murtihash94@users.noreply.github.com" }
+]
 requires-python = ">=3.11"
 dependencies = [
-    "mcp[cli]>=1.3.0",
+    "fastapi>=0.115.12",
+    "mcp[cli]>=1.10.0",
+    "uvicorn>=0.34.2",
     "aiosmtplib>=3.0.0",
     "email-validator>=2.0.0",
     "pydantic>=2.0.0",
     "python-dotenv>=1.0.0",
 ]
 
-[tool.uv.workspace]
-members = [
-    "mcp-server",
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "hatchling>=1.27.0",
 ]
+
+[tool.hatch.build.hooks.custom]
+path = "hooks/apps_build.py"
+
+[project.scripts]
+email-server = "email_server.main:main"

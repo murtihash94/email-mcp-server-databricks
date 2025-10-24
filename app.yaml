@@ -1,0 +1,14 @@
+command: ["uv", "run", "email-server"]
+env:
+  - name: SMTP_HOST
+    value: smtp.gmail.com
+  - name: SMTP_PORT
+    value: "587"
+  - name: SMTP_SECURE
+    value: "false"
+  - name: SMTP_USER
+    value: your-email@gmail.com
+  - name: SMTP_FROM
+    value: your-email@gmail.com
+  - name: SMTP_PASS
+    value: your-app-password
